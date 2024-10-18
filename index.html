@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <!-- Water.css https://watercss.kognise.dev/ MIT License -->
+    <title>Social Share</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Phosphor Icons https://phosphoricons.com/ MIT License-->
+</head>
+<body>
+    <h1>Social Share</h1>
+    <p>URLをコピーするボタンつけたい<br>
+      なんかShadowDOMというやつを親要素の影響が無くなるのでこういうときに使うといいらしい　たぶん
+    </p>
+    <p>
+      <button>test</button>標準ボタン
+    </p>
+    
+    <h5>
+      Social share
+    </h5>
+      <div id="socialshare" style="display: flex;" data-color="#333,#eee,#ccc,#aaa" data-color2="#ccc,#111,#333,#666" data-text="" data-url="">
+
+        [["X(Twitter)","https://twitter.com/intent/post?text=","ph ph-x-logo"],
+        ["Threads","https://www.threads.net/intent/post?text=","ph ph-threads-logo"],
+        ["Bluesky","https://bsky.app/intent/compose?text=","ph ph-butterfly"],
+        ["Taittsu","https://taittsuu.com/share?text=","ph ph-pants"],
+        ["fedifile","https://fedifile.net/share?text=","ph ph-fediverse-logo"]]       </div>
+
+    <!-- <input type="text" id="input-text" placeholder="Enter text for data-text" />
+
+    <button id="update-button">Update Data Text</button> -->
+    <script>
+        // document.getElementById('update-button').onclick = function() {
+        //     pageInfo = getPageInfo();
+        //     const inputText = document.getElementById('input-text').value;
+        //     const sdomTest = document.getElementById('socialshare');
+        //     sdomTest.setAttribute('data-text', inputText);
+            
+        // };
+    </script>
+
+
+
+    
+    <p>
+        通常はタイトルとURLで機能するがdata-text,data-url属性に記述した内容にも変更可能<br>
+        data-color,data-color2で「文字&枠線、ホバー時のボタン色、ボタン色、コピー時のお知らせ色」を設定可能<br><br>
+        アイコンは<a href="https://phosphoricons.com/">Phosphor Icons</a>（<a href="https://github.com/kognise/water.css/blob/master/LICENSE.md">MIT License</a>）をつかっている<br>
+        <a href="https://watercss.kognise.dev">Water.CSS</a>に合うように作ったつもりだったんですけどなんとか他のページでも使えたらいいなとおもう<br>
+        <Textarea>
+<div id="socialshare" style="display: flex;" data-color="#333,#eee,#ccc,#aaa" data-color2="#ccc,#111,#333,#666" data-text="" data-url="">
+
+  [["X(Twitter)","https://twitter.com/intent/post?text=","ph ph-x-logo"],
+  ["Threads","https://www.threads.net/intent/post?text=","ph ph-threads-logo"],
+  ["Bluesky","https://bsky.app/intent/compose?text=","ph ph-butterfly"],
+  ["Taittsu","https://taittsuu.com/share?text=","ph ph-pants"],
+  ["fedifile","https://fedifile.net/share?text=","ph ph-fediverse-logo"]]       </div>
+  
+  <script src="urlcopy.js"></script>
+        </Textarea>
+
+    </p>
+
+    <p>
+        2024-10-19(Sat)　公開
+    </p>
+    
+    <p>
+
+    <a href="old_20240501/">old</a><br>
+    <script src="urlcopy.js"></script>
+
+</body>
+</html>

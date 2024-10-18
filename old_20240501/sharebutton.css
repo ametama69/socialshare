@@ -1,0 +1,100 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  
+  .socialshare a {
+    color: #1d1d1d;
+    color: var(--form-text);
+    background-color: #efefef;
+    background-color: var(--button-base);
+    width: 38px;
+    height: 38px;
+    margin-right :6px;
+    padding:0em;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border:solid 1px;
+  }
+  .socialshare a:hover {
+    background: var(--button-hover);
+    text-decoration: none;
+  }
+  
+  .socialshare{
+    display: flex;
+    --button-base: #afc0d5;
+    --button-hover: #778899;
+  }
+  
+  @media (prefers-color-scheme: dark){
+  .socialshare {
+    display: flex;
+    --button-base: #3c5067;
+    --button-hover: #7788cc;
+  }}
+  
+  .sharebutton {
+    width: 40px;
+    height: 40px;
+    padding:1em;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border:solid 1px;
+  }
+  
+  
+  
+  .ph{
+    font-size:18px;
+  }
+  
+  .sharebutton {
+    position: relative; /* ツールチップの位置の基準に */
+    cursor: pointer; /* カーソルを当てたときにポインターに */
+  }
+  
+  /* ツールチップのテキスト */
+  .tooltip-text {
+    opacity: 0; /* はじめは隠しておく */
+    visibility: hidden; /* はじめは隠しておく */
+    position: absolute; /* 絶対配置 */
+    left: 50%; /* 親に対して中央配置 */
+    transform: translateX(-50%); /* 親に対して中央配置 */
+    bottom: -30px; /* 親要素下からの位置 */
+    display: inline-block;
+    padding: 5px; /* 余白 */
+    white-space: nowrap; /* テキストを折り返さない */
+    font-size: 0.8rem; /* フォントサイズ */
+    line-height: 1.3; /* 行間 */
+    background: #333; /* 背景色 */
+    color: #fff; /* 文字色 */
+    border-radius: 3px; /* 角丸 */
+    transition: 0.3s ease-in; /* アニメーション */
+  }
+  
+  /* ホバー時にツールチップの非表示を解除 */
+  .sharebutton:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  #copied,#copied2 {
+    opacity: 0;
+    position: absolute; /* 絶対配置 */
+    left: 50%; /* 親に対して中央配置 */
+    transform: translateX(-50%); /* 親に対して中央配置 */
+    bottom: 40px; /* 親要素下からの位置 */
+  }
+  #copied.is-active,#copied2.is-active{
+    opacity: 1;
+  }
